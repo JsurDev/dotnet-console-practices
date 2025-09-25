@@ -135,12 +135,17 @@ namespace Practicas
 
             //FOR con expresion Boolean
             //variable de control
-            //int i;
-            for (int i=1; i<=10;i++)
-            {
-                Console.WriteLine(i);
-            }
+            //Asignacion compuesta (x - = 5) == (x = x -5)
 
+            int i;
+            int contador = 0;
+
+            for (i=1; i <= 10; i++)
+            {
+                contador++;
+                Console.WriteLine("Vuelta del ciclo numero {0}",contador);
+            }
+            Console.WriteLine("El numero de vueltas que dio el ciclo fue {0}",contador);
 
 
 
