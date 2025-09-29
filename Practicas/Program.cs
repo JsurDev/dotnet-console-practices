@@ -340,7 +340,8 @@ namespace Practicas
             int i;
             int numBase;
             int numPotencia;
-            int resultado = 1, resultadoNegativo;
+            double resultado = 1;
+            double    resultadoNegativo;
 
             Console.WriteLine("Ingrese el numero base de la operacion: ");
             numBase = Convert.ToInt32(Console.ReadLine());
