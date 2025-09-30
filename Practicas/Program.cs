@@ -336,6 +336,7 @@ namespace Practicas
             Console.ReadKey();
             */
 
+            /*
             //ejercicio calculando la potencia de un numero
             int i;
             int numBase;
@@ -365,6 +366,29 @@ namespace Practicas
 
             //mostamos el resultado negativo
             Console.WriteLine("{0}^{1}={2}", numBase,numPotencia,resultadoNegativo);
+            */
+
+            //Programa que calcula los numeros primos del 1 al 100.
+
+            int num, Divisor, numDivisores;
+
+            for (num = 2; num <= 100; num++)
+            {
+                numDivisores = 0; // reiniciamos en cada número
+
+                for (Divisor = 1; Divisor <= num; Divisor++)
+                {
+                    if (num % Divisor == 0)
+                    {
+                        numDivisores++;
+                    }
+                }
+
+                if (numDivisores == 2) // si tiene exactamente 2 divisores (1 y él mismo)
+                {
+                    Console.WriteLine(num);
+                }
+            }
 
 
         }
